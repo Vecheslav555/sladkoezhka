@@ -63,12 +63,18 @@ export const PRODUCTS: Product[] = [
 ];
 
 export const MOCK_ORDER: Order = {
-  id: 1001, status: 'preparing', total: 1990, deliveryFee: 200,
+  id: 1001,
+  status: 'preparing',
+  total: 1990,
+  deliveryFee: 200,
   address: 'Калининград, ул. Ленина, 15, кв. 42',
   createdAt: new Date().toISOString(),
-   items: [
+  items: [
     { productId: 1, name: 'Медовик классический', qty: 1, price: 1590 },
     { productId: 4, name: 'Зефир малиновый', qty: 1, price: 290 }
   ],
-  bonusEarned: 99, bonusUsed: 0,
+  bonusEarned: 99,
+  bonusUsed: 0,
+  customer: 'Демо-покупатель',  // <-- ДОБАВИТЬ ЭТО
+  payment: 'card'               // <-- ДОБАВИТЬ ЭТО
 };
